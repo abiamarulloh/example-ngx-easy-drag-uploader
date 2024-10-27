@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'example-ngx-easy-drag-uploader';
+
+  onFilesUploaded(files: File[]) {
+    console.log('Uploaded files:', files);
+    // Further processing of files...
+  }
+
 }
